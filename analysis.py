@@ -6,11 +6,11 @@ import streamlit as st
 
 
 def log_(x):
-    return np.log10(x + 1)
+    return np.log10(np.sqrt(x**2 + 1))
 
 
 def exp_(x):
-    return 10**x - 1
+    return np.sqrt((10**x) ** 2 - 1)
 
 
 def model(x, a, b, c):
